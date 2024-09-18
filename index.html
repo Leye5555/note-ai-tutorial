@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note AI</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/7.0.1/uuid.min.js"
+      integrity="sha512-GeE2ezTNfGmRS/ZCYC4mdIhukW8qTPfXnhzqNnz10QxLrBRlUgCTKPQBs6M8hie+DQgJMmgdSjA8nRSpuC0uYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="note-app-title">
+        <h1>Note AI</h1>
+        <i> ~ A new world of note taking</i>
+      </div>
+      <div class="side-navigation">
+        <div class="btn-wrap">
+          <button id="btn">Create New Note</button>
+        </div>
+        <h2 class="note-list-title">Previous notes</h2>
+        <ul class="note-list">
+          <!-- Emmet abbreviation for vscode -->
+          <li class="note-list-item">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+          </li>
+        </ul>
+      </div>
+      <form class="note-taker">
+        <input type="text" name="title" placeholder="Note title" id="title" />
+        <textarea
+          placeholder="Note Content"
+          name="note"
+          id="note"
+          rows="20"
+          cols="20"
+        ></textarea>
+        <div class="btn-wrap">
+          <button type="button" id="submit">Create</button>
+          <button type="button" id="update" hidden disabled>Update Note</button>
+        </div>
+      </form>
+    </div>
+    <script></script>
+  </body>
+</html>
