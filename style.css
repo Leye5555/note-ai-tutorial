@@ -22,9 +22,9 @@ body {
   grid-template-rows: repeat(6, 1fr);
 }
 
-.app > div {
+/* .app > div {
   border: 1px solid;
-}
+} */
 
 .side-navigation {
   grid-column: 1 / 2;
@@ -32,6 +32,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  color: white;
 }
 
 .note-app-title {
